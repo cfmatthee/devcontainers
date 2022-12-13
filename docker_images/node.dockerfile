@@ -1,6 +1,7 @@
-FROM node:16-slim
+ARG VERSION
+FROM node:$VERSION
 
-RUN apt update -y && apt install -y git sudo
+RUN apt update -y && apt install -y git sudo && npm i -g npm@latest
 
 RUN echo "Defaults  lecture = never" > /etc/sudoers.d/node
 RUN echo "node ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/node
