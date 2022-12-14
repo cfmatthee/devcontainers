@@ -9,4 +9,5 @@ RUN echo "Defaults  lecture = never" > /etc/sudoers.d/$USERNAME
 RUN echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/$USERNAME
 RUN chmod 0440 /etc/sudoers.d/$USERNAME
 USER $USERNAME:$USERNAME
+RUN mkdir -p /home/$USERNAME/.local/bin
 WORKDIR /python

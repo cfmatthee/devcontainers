@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    image: dev:python-3.7-slim
+    container_name: python-app
+    working_dir: /python
+    volumes:
+      - ..:/python
+    command: sleep infinity
