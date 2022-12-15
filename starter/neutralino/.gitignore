@@ -1,0 +1,11 @@
+/node_modules
+/dist
+/.tmp
+/bin
+
+neutralino.js
+neutralinojs.log
+
+.env
+.env.*
+!.env.example

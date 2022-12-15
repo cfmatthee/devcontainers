@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: dev:neutralino
+    container_name: app-app
+    working_dir: /app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - '3000:3000'
+    volumes:
+      - ..:/app
+    command: sleep infinity
