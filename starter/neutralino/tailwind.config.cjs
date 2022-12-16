@@ -1,5 +1,5 @@
 const config = {
-  content: ['./src/**/*.{html,js,svelte,ts}', './index.html'],
+  content: ['./src/**/*.svelte', './index.html'],
   theme: {
     extend: {},
   },

@@ -1,10 +1,12 @@
-/node_modules
-/dist
-/.tmp
 /bin
+/dist
+/node_modules
+/.routify
+/.tmp
 
 neutralino.js
 neutralinojs.log
+index.html
 
 .env
 .env.*
