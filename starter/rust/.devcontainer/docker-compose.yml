@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    image: dev:rust
+    container_name: rust-app
+    working_dir: /rust
+    volumes:
+      - ..:/rust
+    command: sleep infinity

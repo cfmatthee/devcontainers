@@ -1,0 +1,7 @@
+{
+  "name": "<app name>",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/rust",
+  "extensions": ["rust-lang.rust-analyzer"]
+}

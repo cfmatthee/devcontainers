@@ -22,3 +22,7 @@ python-3.7-slim:
 
 python-3.8-slim:
 	@$(DOCKERBUILD) --build-arg VERSION=3.8-slim -f python.dockerfile .
+
+rust:
+	@docker pull rust:latest
+	@$(DOCKERBUILD) -f rust.dockerfile .
